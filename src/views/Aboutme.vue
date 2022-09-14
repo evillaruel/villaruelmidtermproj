@@ -4,7 +4,7 @@
         <v-card class="rounded-lg mx-auto " style="width:100%;" color="#80DEEA">
             <v-form>
                 <v-container>
-                    <img src="pic1.jpg" alt="Villaruel" class="img">
+                    <img src="/public/pic1.jpg" alt="Villaruel" class="img">
                     <v-card-text>
                         <center><h3>Hi! My name is Engel Bert M. Villaruel.</h3> 
                         <br>

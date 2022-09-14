@@ -3,7 +3,7 @@
         <v-card class="rounded-lg mx-auto " style="width:100%;" color="#80DEEA">
             <v-form>
                 <v-container>
-                    <img src="font1.webp" alt="Engel" class="img">
+                    <img src="/public/font1.webp" alt="Engel" class="img">
                     <v-card-text>
                         <br>
                         <center><h3> Simple Calculator  </h3>

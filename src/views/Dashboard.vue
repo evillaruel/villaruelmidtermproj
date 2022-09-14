@@ -5,7 +5,7 @@
 <br>
 <br>
 <br>
-<img src="font2.webp" alt="Villaruel" class="img">
+<img src="/public/font2.webp" alt="Villaruel" class="img">
 <br>
 <br>
 </template>

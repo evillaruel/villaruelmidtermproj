@@ -2,7 +2,7 @@
     <div id="quiz-container">
         <center>
         <v-card class="vcard" max-width="1000px" color="#5485b4">
-            <v-img alt="" src="/arts1.jpg" 
+            <v-img alt="" src="/public/arts1.jpg" 
             contain
             height="100px"
             width="2000px">
