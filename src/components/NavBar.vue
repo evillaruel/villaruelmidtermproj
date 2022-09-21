@@ -31,11 +31,9 @@
       </v-list>
     </v-menu>
 
-      <v-btn flat color="primary">
+    <v-btn @click="handleSignOut" v-if="isLoggedIn">
         <span>Sign Out</span>
-        <v-icon right>exit_to_app</v-icon>
       </v-btn>
-      
       
       </v-toolbar>
 
@@ -62,8 +60,11 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
-    
+  import { onMounted,ref } from 'vue';
+  import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+  import { useRouter } from "vue-router";
+  const router = useRouter();
+  const isLoggedIn = ref(false);
   const drawer = ref(false)
 
   const  items =  ref([
@@ -74,12 +75,44 @@
            { title: 'About Me', icon: 'mdi-account', path: '/aboutmeApp'},
            { title: 'Axios Quiz App', icon: 'mdi-account', path: '/axiosdemoApp'},
            { title: 'About Web', icon: 'mdi-account', path: '/aboutwebApp'},
+           { title: 'User Create', icon: 'mdi-account', path: '/usercreateApp'},
+           { title: 'Sign In', icon: 'mdi-account', path: '/signIn'},
         ])
 
- function toggleDrawer(){
-  return drawer.value = !drawer.value
- }
+        let auth;
+onMounted(() => {
+  auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      isLoggedIn.value = true;
+      const info = user.email;
+      console.log(info);
+    } else {
+      isLoggedIn.value = false;
+      console.log("not logged in");
+    }
+  });
+});
+function toggleDrawer() {
+  return (drawer.value = !drawer.value);
+}
+const handleSignOut = () => {
+  signOut(auth).then(() => {
+    logOutSuccess();
+    router.push("/signIn");
+  });
+};
+function logOutSuccess() {
+  // Swal.fire({
+  //   position: "center",
+  //   icon: "success",
+  //   title: "You logged out",
+  //   text: "Thank you for playing",
+  //   showConfirmButton: false,
+  //   timer: 3000,
+  // });
+}
 
- 
+
+
 </script>
-<!-- engelb -->
