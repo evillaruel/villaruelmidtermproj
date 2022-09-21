@@ -1,8 +1,5 @@
 <template>
-    <v-parallax
-    dark
-    src="https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=826&t=st=1663748122~exp=1663748722~hmac=8c5fecf2b256217c1467163d0bfe873437775fbd8e50fa189791fd73551017dc"
-    >
+
     <center>
     <div id="quiz-container">
         <v-card class="vcard" max-width="600px" color="#5485b4">
@@ -24,7 +21,7 @@
         </v-card>
     </div>
 </center>
-</v-parallax>
+
 </template>
     
 <script>
