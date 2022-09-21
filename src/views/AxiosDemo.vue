@@ -1,7 +1,7 @@
 <template>
     <center>
     <div id="quiz-container">
-        <v-card class="vcard" max-width="512px" color="#5485b4">
+        <v-card class="vcard" max-width="600px" color="#5485b4">
             <v-img alt="" src="/public/arts.jpg" 
             contain
             height="100px"
