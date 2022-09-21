@@ -72,11 +72,11 @@
            { title: 'Math', icon: 'mdi-plus-one', path: '/basicMath' },
            { title: 'String App', icon: 'mdi-help-box', path: '/stringApp'},
            { title: 'Vuetify', icon: 'mdi-vuejs', path: '/vuetifyApp'},
-           { title: 'About Me', icon: 'mdi-account', path: '/aboutmeApp'},
-           { title: 'Axios Quiz App', icon: 'mdi-account', path: '/axiosdemoApp'},
-           { title: 'About Web', icon: 'mdi-account', path: '/aboutwebApp'},
-           { title: 'User Create', icon: 'mdi-account', path: '/usercreateApp'},
-           { title: 'Sign In', icon: 'mdi-account', path: '/signIn'},
+           { title: 'About Me', icon: 'mdi-face', path: '/aboutmeApp'},
+           { title: 'Axios Quiz App', icon: 'mdi-lightbulb', path: '/axiosdemoApp'},
+           { title: 'About Web', icon: 'mdi-receipt', path: '/aboutwebApp'},
+           { title: 'User Create', icon: 'mdi-lock', path: '/usercreateApp'},
+           { title: 'Sign In', icon: 'mdi-login', path: '/signIn'},
         ])
 
         let auth;
